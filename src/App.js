@@ -1,8 +1,13 @@
+import ExpenseItem from './components/ExpenseItem';
+
+//*custom made components must be capitalized
+
 function App() {
-  return (
+  return ( 
     <div>
       <h2>Let's get started!</h2>
-    </div>
+      <ExpenseItem></ExpenseItem> 
+          </div>
   );
 }
 
