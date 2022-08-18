@@ -1,5 +1,7 @@
 //* first file to execute on npm start
 
+import React from 'react';
+
 import ReactDOM from 'react-dom/client'; //3rd party lib
 
 

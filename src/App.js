@@ -1,8 +1,13 @@
+import React from 'react';
+
+import Expenses from './components/Expenses/Expenses';
 // import ExpenseItem from "./components/ExpenseItem"; //*moved to Expenses file
 
-import Expenses from "./components/Expenses";
-
 //*custom made components must be capitalized
+
+// arrow functions
+// const App = () =>{
+// }
 
 function App() {
   const expenses = [
@@ -41,6 +46,14 @@ function App() {
         <Expenses items={expenses}></Expenses>
     </div>
   );
+
+  // alternative to the above but much more complicated and needs react imported in all jsx files
+
+  // return 
+  // React.createElement('div',{},
+  //   React.createElement('h2', {}, 'Lets get started!'),
+  //   React.createElement(Expenses, {item: expenses})
+  // );
 }
 
 export default App;
