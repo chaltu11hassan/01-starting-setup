@@ -42,15 +42,6 @@ function App() {
     },
   ];
 
-  return (
-    <div>
-      
-        <NewExpense></NewExpense>
-        <Expenses items={expenses}></Expenses>
-        
-    </div>
-  );
-
   // alternative to the above but much more complicated and needs react imported in all jsx files
 
   // return 
@@ -58,6 +49,23 @@ function App() {
   //   React.createElement('h2', {}, 'Lets get started!'),
   //   React.createElement(Expenses, {item: expenses})
   // );
+
+  const addExpenseHandler =(expense)=>{
+    console.log('In App.js');
+    console.log(expense);
+
+  };
+
+  return (
+    <div>
+
+        <NewExpense onAddExpense={addExpenseHandler}></NewExpense>
+        
+        <Expenses items={expenses}></Expenses>
+        
+    </div>
+  );
+
 }
 
 export default App;
