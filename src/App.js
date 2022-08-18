@@ -3,6 +3,8 @@ import React from 'react';
 import Expenses from './components/Expenses/Expenses';
 // import ExpenseItem from "./components/ExpenseItem"; //*moved to Expenses file
 
+import NewExpense from './components/NewExpense/NewExpense';
+
 //*custom made components must be capitalized
 
 // arrow functions
@@ -42,8 +44,10 @@ function App() {
 
   return (
     <div>
-      <h2>Let's get started!</h2>
+      
+        <NewExpense></NewExpense>
         <Expenses items={expenses}></Expenses>
+        
     </div>
   );
 
