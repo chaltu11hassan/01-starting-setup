@@ -1,4 +1,6 @@
 
+//expenses filter = controlled component (controlled by expenses component)
+
 import React from 'react';
 
 import './ExpensesFilter.css';
